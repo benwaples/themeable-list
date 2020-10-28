@@ -1,6 +1,7 @@
 import React from 'react'
 import { useCharacters, useTheme } from '../../hooks'
 import { Character, CharacterProps } from '../Character/Character'
+import './CharacterList.scss'
 
 export const CharacterList = () => {
 
@@ -11,10 +12,13 @@ export const CharacterList = () => {
     <Character {...character} />
   </li>)
 
+  const displayTheme =(theme === 'midnightOnHalloween') ? 'spooky' : 'daylight'
+
   if(loading) return <h1>Loading...</h1>
   if(error) return <h1>Failed to fetch Rick and Morty Characters</h1>
+
   return (
-    <div>
+    <div className={displayTheme} id="layout">
       <ul>
         {characterElements}
       </ul>

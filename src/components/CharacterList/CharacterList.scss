@@ -1,0 +1,21 @@
+#layout {
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin: 8px;
+      padding: 8px;
+      text-align: center;
+    }
+  }
+}
+
+.daylight {
+  background-color: blue;
+}
+
+.spooky {
+  background: orange;
+}
