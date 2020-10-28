@@ -1,4 +1,6 @@
 import React from 'react'
+import { spookyImg } from '../../halloween-gif'
+import { useTheme } from '../../hooks'
 import './Character.scss'
 
 export type CharacterProps = {
@@ -8,11 +10,21 @@ export type CharacterProps = {
 }
 
 export const Character = ({name, imageUrl, id}: CharacterProps) => {
+  const theme = useTheme()
+
+  const randomPick: number = Math.floor(Math.random() * Math.floor(6))
+
   return (
-    <div>
+    <div className="character-card">
       <h1>{name}</h1>
-      <img src={imageUrl} alt={id}/>
-      <img src="https://media.giphy.com/media/Ee4Y8s4Lr3c0o/giphy.gif" alt="spooked" className="im-spooked" style={{ display: "none"}} />
+      <div>
+        <img src={imageUrl} alt={id}/>
+        
+        <img 
+        src={spookyImg[randomPick]} alt="spooked" 
+        className={(theme === 'midnightOnHalloween') ?"im-spooked": 'ignored'} 
+        />
+      </div>
     </div>
   )
 }

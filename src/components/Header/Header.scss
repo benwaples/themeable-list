@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Denk+One);
+
+
+body{ 
+  --color1: #2f4858ff;
+  --color2: #33658aff;
+  --color3: #86bbd8ff;
+  --color4: #f6ae2dff;
+  --color5: #f26419ff;
+    // scary colors
+  --color6: #000000ff;
+  --color7: #2f1000ff;
+  --color8: #621b00ff;
+  --color9: #945600ff;
+  --color10: #c75000ff;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  h1 {
+    font-size: 40px;
+  }
+  button {
+    align-self: flex-end;
+    margin: 0 20px 10px 0;
+  }
+}
+
+.daylight {
+  background-color: var(--color2);
+  color: white;
+
+  button {
+    background-color: black;
+    color: var(--color10);
+    border: none;
+    width: 180px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+.midnightOnHalloween {
+  background-color: var(--color8);
+
+  button {
+    background-color: var(--color3);
+    color: white;
+    border: none;
+    width: 180px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  h1{
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    font-family: 'Denk One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 4em;
+    text-align: center;
+    
+    
+  }
+
+}
+

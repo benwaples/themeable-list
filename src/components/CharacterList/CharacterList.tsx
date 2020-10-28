@@ -12,7 +12,7 @@ export const CharacterList = () => {
     <Character {...character} />
   </li>)
 
-  const displayTheme =(theme === 'midnightOnHalloween') ? 'spooky' : 'daylight'
+  const displayTheme =(theme === 'midnightOnHalloween') ? 'spooky' : 'daylightBody'
 
   if(loading) return <h1>Loading...</h1>
   if(error) return <h1>Failed to fetch Rick and Morty Characters</h1>
