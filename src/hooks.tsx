@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import { CharacterProps } from "./components/Character/Character"
+import { ThemeContext, ThemeType } from "./Context/theme-context"
 import { getCharacters } from "./services/rick-and-morty-api"
 
 
@@ -21,4 +22,14 @@ export const useCharacters = () => {
     error
   }
   
+}
+
+export const useTheme = () => {
+  const { theme } = useContext<ThemeType>(ThemeContext)
+  return theme
+}
+
+export const useThemeToggle = () => {
+  const { toggle } = useContext<ThemeType>(ThemeContext)
+  return toggle
 }
