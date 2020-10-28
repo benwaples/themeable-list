@@ -5,10 +5,11 @@ export const Header = () => {
   const theme = useTheme()
   const toggle = useThemeToggle()
 
+  const displayTheme = (theme === 'midnightOnHalloween') ?  'Daylight Theme' : 'sPoOkEy ThEmE'
+
   return (
     <h1>
-      {theme}
-      <button onClick={toggle}>change theme</button>
+      <button onClick={toggle}>see {displayTheme}</button>
     </h1>
   )
 }
