@@ -1,0 +1,22 @@
+.im-spooked {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ignored {
+  visibility: hidden;
+  position: absolute;
+}
+
+.character-card {
+  position: relative;
+}
+
+.character-card:hover .im-spooked {
+  visibility: visible;
+  
+}

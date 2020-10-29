@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Denk+One);
+
+body {
+  --color1: #2f4858ff;
+  --color2: #33658aff;
+  --color3: #86bbd8ff;
+  --color4: #f6ae2dff;
+  --color5: #f26419ff;
+    // scary colors
+  --color6: #000000ff;
+  --color7: #2f1000ff;
+  --color8: #621b00ff;
+  --color9: #945600ff;
+  --color10: #c75000ff;
+}
+
+#layout {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      margin: 8px;
+      padding: 8px;
+      text-align: center;
+      border-radius: 30px 30px 15px 15px;
+      max-width: 316px;
+    }
+
+    img {
+      border-radius: 30px 30px 15px 15px;
+    }
+
+    li:hover img{
+      transform: scale(1.05);
+    }
+  }
+}
+
+.daylightBody {
+  background-color: white;
+  color: var(--color5);
+
+  ul {
+    li {
+      background-color: var(--color3);
+      border: solid var(--color5) 1px;
+    }
+  }
+}
+
+.spooky {
+  color: var(--color6);
+  background: var(--color6);
+  ul {
+    li {
+      background-color: var(--color10);
+      border: solid var(--color9) 1px;
+      font-family: 'Denk One', sans-serif;
+    }
+  }
+}
