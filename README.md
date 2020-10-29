@@ -1,1 +1,1 @@
-# [Themeable listLab Instructions](https://github.com/alchemycodelab/alchemy-fsjs-september-2020/tree/main/32_context-api/lab)
+# [Themeable list lab Instructions](https://github.com/alchemycodelab/alchemy-fsjs-september-2020/tree/main/32_context-api/lab)
